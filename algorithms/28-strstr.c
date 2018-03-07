@@ -25,5 +25,7 @@ int strStr(char* haystack, char* needle) {
         if (ncand_new == 0) return -1;
         ncand = ncand_new;
     }
-    return candidates[0] - n_len + 1;
+    int answer = candiates[0] - n_len + 1;
+    free(candidates);
+    return answer;
 }
